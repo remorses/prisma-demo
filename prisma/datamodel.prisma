@@ -11,7 +11,7 @@ type User @db(name: "users") {
 type Data {
   field: String @unique 
   id: ID! @id
-  
+  user: User
 }
 
 enum Enu {
