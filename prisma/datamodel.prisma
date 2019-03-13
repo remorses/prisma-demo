@@ -8,10 +8,8 @@ type User @db(name: "users") {
 }
 
 
-type Data {
-  field: String @unique 
-  id: ID! @id
-  user: User @relation(link: INLINE)
+type Data @embedded {
+  field: String  
 }
 
 enum Enu {
