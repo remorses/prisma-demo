@@ -3,7 +3,13 @@ type User @db(name: "users") {
   email: String! @unique
   name: String
   enu: Enu 
+  data: Data
   posts: [Post!]! @relation(link: INLINE)
+}
+
+
+type Data  {
+  field: String @unique 
 }
 
 enum Enu {
