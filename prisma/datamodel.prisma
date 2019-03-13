@@ -8,8 +8,9 @@ type User @db(name: "users") {
 }
 
 
-type Data @embedded  {
+type Data {
   field: String @unique 
+  
 }
 
 enum Enu {
