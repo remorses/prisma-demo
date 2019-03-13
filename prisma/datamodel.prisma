@@ -8,7 +8,7 @@ type User @db(name: "users") {
 }
 
 
-type Data  {
+type Data @embedded  {
   field: String @unique 
 }
 
